@@ -1,0 +1,21 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    max-width: 30em;
+    margin: auto;
+    padding: 2em;
+    font-size: calc(1em + 1vw);
+}
+
+@keyframes remove {
+    from { opacity: 1; },
+    to { opacity: 0; }
+}
+
+@keyframes insert {
+    from { opacity: 0; },
+    to { opacity: 1; }
+}
