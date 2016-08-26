@@ -1,0 +1,61 @@
+@import "normalize.css";
+@import "variables.css";
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    height: 100%;
+    font-size: calc(1em + 1vw);
+    font-family: sans-serif;
+    margin: 0;
+}
+
+nav {
+    height: 5em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 2px solid;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 2em;
+}
+
+nav ul li {
+    margin-right: 1em;
+}
+
+main {
+    margin-top: 5em;
+    padding: 2em;
+    overflow-x: hidden;
+}
+
+.barba-container {
+}
+
+/* animations */
+
+@keyframes fade-out {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-out { animation: fade-out .5s ease both !important; }
+.fade-in { animation: fade-in .5s ease both; }
